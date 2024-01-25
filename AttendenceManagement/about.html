@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+
+        .header {
+            background-color: #9933cc;
+            color: #ffffff;
+            padding: 15px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #33b5e5;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
+            .menu li:hover {
+                background-color: #0099cc;
+            }
+
+        .aside {
+            background-color: #33b5e5;
+            padding: 15px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
+        .footer {
+            background-color: #0099cc;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        }
+
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 600px) {
+            /* For tablets: */
+            .col-s-1 {
+                width: 8.33%;
+            }
+
+            .col-s-2 {
+                width: 16.66%;
+            }
+
+            .col-s-3 {
+                width: 25%;
+            }
+
+            .col-s-4 {
+                width: 33.33%;
+            }
+
+            .col-s-5 {
+                width: 41.66%;
+            }
+
+            .col-s-6 {
+                width: 50%;
+            }
+
+            .col-s-7 {
+                width: 58.33%;
+            }
+
+            .col-s-8 {
+                width: 66.66%;
+            }
+
+            .col-s-9 {
+                width: 75%;
+            }
+
+            .col-s-10 {
+                width: 83.33%;
+            }
+
+            .col-s-11 {
+                width: 91.66%;
+            }
+
+            .col-s-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            /* For desktop: */
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        <div align="center">
+            
+                
+                <!---Navbar start--->
+                <div class="navbar navbar-default navbar-fixed-top " role="navigation">
+                    <div class="container ">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle " data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+
+                            </button>
+                            <a class="navbar-brand" href="#"><span><img src="image/imagesds.jpg" alt="Admin Dashboard" height="30" /></span>     Admin Dashboard </a>
+
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="admindashboard.aspx">Home</a> </li>
+                                <li><a href="about.html">About</a> </li>
+                                <li><a href="Contact.aspx">Contact US</a> </li>
+                                <li><a href="AddAdmin.aspx">Create Admin</a> </li>
+
+                               
+                                <li class="drodown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Manage <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="AddStudent.aspx">Add Student</a> </li>
+                                        <li><a href="Addteacher.aspx">Add Teacher</a> </li>
+                                        <li><a href="DisplayFeedback.aspx">Analyse Feedback</a> </li>
+                                        <li><a href="#">Add Gender</a> </li>
+                                        <li><a href="#">Add Size</a> </li>
+                                        <li role="#" class="divider "></li>
+                                        <li><a href="#">Edit Brand</a> </li>
+                                        <li><a href="#">Edit Category</a> </li>
+                                        <li><a href="#">Edit SubCategory</a> </li>
+                                        <li><a href="#">Edit Size</a> </li>
+                                        <li role="separator" class="divider "></li>
+                                        <li><a href="#">Report</a> </li>
+                                    </ul>
+                                </li>
+                               
+                                <li><a href="Sign In.aspx">Sign Out</a> </li>
+                                
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+                <!---navbar end--->
+            <h3>welcome to Yamunandan.PVT</h3>
+                <div class="header">
+                    <h1>Yamunandan.PVT</h1>
+                </div>
+
+                <div class="row">
+                    <div class="col-3 col-s-3 menu">
+                        <ul>
+                            <li>School</li>
+                            <li>Attendence</li>
+                            <li>Library</li>
+                           
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-s-9">
+                        <h1>Attendence Management System</h1>
+                        <p>The Attendence management System is one of the best attendence management platform where user can easily mark own attendence and this is the 
+                        user friendly and easy to understand.</p>
+                    </div>
+
+                    <div class="col-3 col-s-12">
+                        <div class="aside">
+                            <h2>What?</h2>
+                            <p>The Attendence management System is one of the user friendly and understandable platform</p>
+                            <h2>Where?</h2>
+                            <p>The Attendence management system is organised from Patana,Bihar</p>
+                            <h2>How?</h2>
+                            <p>If you want to contect with admin the send email to rohitkumar252274@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <p>This is one of the most popular attendence management system </p>
+                </div>
+
+</body>
+</html>
+
+
